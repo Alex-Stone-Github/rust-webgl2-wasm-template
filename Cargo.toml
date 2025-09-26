@@ -1,0 +1,27 @@
+[package]
+name = "rst"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Basic Web Game"
+repository = "none"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.103"
+web-sys = { version = "0.3.80", features = [
+    "Window",
+    "Document",
+    "Element",
+    "HtmlElement",
+    "HtmlCanvasElement",
+    "Node",
+    "console",
+    "WebGl2RenderingContext",
+    "WebGlShader",
+    "WebGlProgram",
+    "WebGlVertexArrayObject",
+    "WebGlBuffer",
+]}
